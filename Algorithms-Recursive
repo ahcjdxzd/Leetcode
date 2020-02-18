@@ -1,0 +1,29 @@
+Recursive:
+f(n) = f(n-1)+1;
+f(0) = 1;
+then f(1) = 2, f(2)=3…
+so the most important thing is base case;
+
+eg1:
+206. Reverse Linked List
+
+f(n) is f(head)
+base case:
+
+f(0): head == NULL;
+f(1): head->next == NULL;
+Thus f(n-1) is f(head->next);
+eg2:
+83. Remove Duplicates from Sorted List
+
+base case:
+
+f(0): head == NULL;
+f(1): head->next == NULL;
+Thus f(n-1) is f(head->next);
+
+eg3:
+82. Remove Duplicates from Sorted List II
+
+when should we use recursive?
+we need so something on the last part of list;
